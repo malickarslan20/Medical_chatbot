@@ -1,14 +1,10 @@
 import React from "react";
 
-export default function CategoryCard({ label, image, featured }) {
+export default function CategoryCard({ label, image }) {
   return (
     <button
       type="button"
-      className={`flex min-h-[130px] flex-col items-start gap-2 rounded-2xl border bg-white p-2.5 text-left ${
-        featured
-          ? "border-emerald-600 ring-1 ring-emerald-600"
-          : "border-gray-200"
-      }`}
+      className={`flex min-h-[130px] flex-col items-start gap-2 rounded-2xl border bg-white p-2.5 text-left`}
     >
       <span className="flex flex-col text-[10.5px] font-semibold uppercase leading-tight tracking-wide text-slate-900">
         {label.split("\n").map((line) => (
